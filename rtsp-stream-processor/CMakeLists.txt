@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.16)
+project(rtsp_stream)
+find_package(OpenCV REQUIRED)
+set(CMAKE_CXX_STANDARD 17)
+add_executable(rtsp_stream rtsp_stream.cpp)
+target_link_libraries(rtsp_stream ${OpenCV_LIBS})
